@@ -1,0 +1,90 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="/index.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <!-- components amp -->
+        <!-- yutube video  -->
+        <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+        <!-- carrosel -->
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+    
+    <style>
+        .amp-carousel-slide i-amphtml-sizer{
+            /* height: 400px;
+            margin: 0 ;
+            padding: 0 !important; */
+        }
+    </style>
+  </head>
+<body>
+    <h1 id="hello">Hello AMPHTML World!</h1>
+    <section>
+        <amp-carousel  
+        id="carousel-with-preview" 
+        width="1000" height="320" 
+        layout="responsive" 
+        type="slides" role="region" 
+        aria-label="Carousel with slide previews"
+        autoplay
+        loop
+    >
+        <amp-img alt="A view of the sea" src="https://img.freepik.com/vetores-gratis/ilustracao-de-banner-de-tecnologia-de-computador-desktop_107791-7920.jpg?w=2000" width="1280"
+            height="132" layout="responsive">
+            <amp-img alt="Misty road" fallback width="550" height="368"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSAiaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMSAxIDggNCI+PGltYWdlIGZpbHRlcj0idXJsKCNibHVyKSIgd2lkdGg9IjEwIiBoZWlnaHQ9IjYiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQW9BQUFBR0NBWUFBQUQ2OEEvR0FBQUFBWE5TUjBJQXJzNGM2UUFBQUVSbFdFbG1UVTBBS2dBQUFBZ0FBWWRwQUFRQUFBQUJBQUFBR2dBQUFBQUFBNkFCQUFNQUFBQUJBQUVBQUtBQ0FBUUFBQUFCQUFBQUNxQURBQVFBQUFBQkFBQUFCZ0FBQUFEK2lGWDBBQUFBcjBsRVFWUUlIVDJQU1FxRlFBeEVYN2VpNG9BYkVRV3Y0TVlMZUhLdjQwSVV3UW5uL25ZdmZxQ29JcWxRaVVpU1JQbStqNVFTei9PNDd4dkhjUmlHZ2I3dnNTeUw2N3FRNy91YW9XNHN5L0kzYXYwOGp6SHlsZFNHZmQrcDY5cXcxbTNia21VWlFnalQweXlpS0ZKNlE4ZVdaVWxSRklSaGFLS2JwdUU4VCtaNVJyaXVxejZna2VjNVZWVXhqaVBUTkpremp1TmcyemJzN3htQ0lDQk5VK0k0cHVzNmxGS3M2NHB0MjBicnhCODZ4VmdkUHdJV2NRQUFBQUJKUlU1RXJrSmdnZz09Ii8+PGZpbHRlciBpZD0iYmx1ciI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iLjUiIC8+PC9maWx0ZXI+PC9zdmc+">
+            </amp-img>
+        </amp-img>
+        <amp-img alt="A view of the sea" src="https://img.freepik.com/vetores-gratis/faixa-plana-de-tecnologia-minima_23-2149091069.jpg?w=2000" width="1280"
+            height="132" layout="responsive">
+        </amp-img>
+        <amp-img alt="A view of the sea" src="https://uninta.edu.br/site/conteudo/arquivos/2020/12/banner-desktop-appenem-unintapresencial-01.jpg" width="1280"
+            height="132" layout="responsive">
+        </amp-img>
+    </amp-carousel>
+    </section>
+    
+
+    <div class="carousel-preview" style="display: flex; width: 100%; justify-content: center; align-items: center;">
+        <button on="tap:carousel-with-preview.goToSlide(index=0)">
+          <amp-img
+            src="/static/inline-examples/images/image1.jpg"
+            width="60"
+            height="40"
+            alt="apples"
+          ></amp-img>
+        </button>
+        <button on="tap:carousel-with-preview.goToSlide(index=1)">
+          <amp-img
+            src="/static/inline-examples/images/image2.jpg"
+            width="60"
+            height="40"
+            alt="lemons"
+          ></amp-img>
+        </button>
+        <button on="tap:carousel-with-preview.goToSlide(index=2)">
+          <amp-img
+            src="/static/inline-examples/images/image3.jpg"
+            width="60"
+            height="40"
+            alt="blueberries"
+          ></amp-img>
+        </button>
+      </div>
+
+    <amp-youtube
+    data-videoid="_3JTx64C8q8"
+    layout="fixed"
+    width="480"
+    height="270"
+    autoplay
+    loop
+  ></amp-youtube>
+</body>
+</html>
